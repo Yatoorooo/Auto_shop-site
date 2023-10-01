@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://fom.in.ua/echo">
+      <h1>Auto shop</h1>
+      <a href="./pages/registration.html">Registration</a>
+      <a href="./pages/authorization.html">Authorization</a>
+
+      <fieldset>
+        <h1>Search auto</h1>
+        <div>
+          <label for="TypeBody">Type body</label>
+          <select name="TypeBody" id="TypeBody">
+            <option value="Passenger car">Passenger car</option>
+            <option value="Moto">Moto</option>
+            <option value="Trucks">Trucks</option>
+          </select>
+        </div>
+        <div>
+          <label for="car_brand">Type your car</label>
+          <select name="TypeYourCar" id="car">
+            <option value="BMW">BMW</option>
+            <option value="Mercedes ">Mercedes</option>
+            <option value="Opel">Opel</option>
+          </select>
+        </div>
+        <div>
+          <label for="ManufacturerCountry">Type manufacturer type cars</label>
+          <select name="ManufacturerCoutry" id="ManufacturerCoutry">
+            <option value="Germany">Germany</option>
+            <option value="Italy">Italy</option>
+            <option value="China">China</option>
+          </select>
+        </div>
+        <div>Price from:<input type="number" name="price_from" /><br /></div>
+        <div>Price to:<input type="number" name="price_to" /><br /></div>
+        <div>
+          <label for="YearFrom">Type year from</label>
+          <select name="YearFrom" id="YearFrom">
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+          </select>
+        </div>
+        <div>
+          <label for="YearTo">Type year to</label>
+          <select name="YearTo" id="YearTo">
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select>
+        </div>
+        <div>
+          State:
+          <input type="checkbox" name="condition[]" value="Broken" />
+          Broken
+          <input type="checkbox" name="condition[]" value="on credit" />
+          On credit
+          <input
+            type="checkbox"
+            name="condition[]"
+            value="not cleared by customs"
+          />
+          Not cleared by customs
+        </div>
+        <div>
+          <br />
+          
+          <label for="FuelType">Type fuel</label>
+          <select name="FuelType" id="FuelType">
+            <option value="SolidFuels">SolidFuels</option>
+            <option value="LiquidFuels">LiquidFuels</option>
+            <option value="GaseousFuels">GaseousFuels</option>
+          </select>
+        </div>  
+        <div>
+          <label for="Transmission_type">Transmission type</label>
+          <select name="Transmission_type" id="Transmission_type">
+            <option value="Manual_transmissions">Manual transmissions</option>
+            <option value="Automatic_transmissions">Automatic transmissions</option>
+            <option value="CVT transmissions">CVT transmissions</option>
+          </select>
+        </div>
+          <div>
+            <label for="Color">Type color</label>
+            <select name="Color" id="Color">
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Orange">Orange</option>
+              <option value="Black">Black</option>
+            </select>
+          </div>
+            Comfort features:<input type="text" name="comfrort_features" /><br />
+          <input type="submit" value="Search" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
